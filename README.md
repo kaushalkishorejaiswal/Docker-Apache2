@@ -46,8 +46,8 @@ http://127.0.0.1:8082/
 
 <h4>Some other important commands:</h4>
 <ul>
-<li>docker images : To list all the images of your docker</li>
-<li>docker ps : To list all the runing containers</li>
-<li>docker kill ##CONTAINER_NAME## : To kill the runing container</li>
-<li>docker rm ##CONTAINER_NAME## : To delete the container from the system.</li>
+<li><b>docker images :</b> To list all the images of your docker</li>
+<li><b>docker ps :</b> To list all the runing containers</li>
+<li><b>docker kill ##CONTAINER_NAME## :</b> To kill the runing container</li>
+<li><b>docker rm ##CONTAINER_NAME## :</b> To delete the container from the system.</li>
 </ul>

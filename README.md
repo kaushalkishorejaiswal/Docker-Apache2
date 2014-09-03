@@ -51,3 +51,15 @@ http://127.0.0.1:8082/
 <li><b>docker kill ##CONTAINER_NAME## :</b> To kill the runing container</li>
 <li><b>docker rm ##CONTAINER_NAME## :</b> To delete the container from the system.</li>
 </ul>
+
+<h4>Additional Notes:</h4>
+<b>Command for attaching the volume of your hosted machine:</b>
+<pre>
+Command Syntax:
+sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 -v ##HOSTED_VOLUME_LOCATION##:##CONTAINER_VOLUME_LOCATION## ##YOUR_IMAGE_NAME##
+</pre>
+
+<pre>
+Command Example:
+sudo docker run --name apache_ins -d -p 8082:80 -v /var/www/kaushal:/var/www apache_kaushal
+</pre>

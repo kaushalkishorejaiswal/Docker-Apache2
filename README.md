@@ -8,19 +8,19 @@ Website : http://www.kaushalkishore.com<br>
 
 <b>Step 1 :</b> Clone the Docker-Apache2.git
 <pre>
-Command: 
+<b>Command: </b>
 git clone https://github.com/kaushalkishorejaiswal/Docker-Apache2.git
 </pre>
 
 <b>Step 2 :</b> Change the directory to the clone folder
 <pre>
-Command:
+<b>Command:</b>
 cd Docker-Apache2
 </pre>
 
 <b>Step 3 :</b> Create the Docker Image
 <pre>
-Command: 
+<b>Command: </b>
 sudo docker build -t ##NAME_OF_YOUR_DOCKER_IMAGE##
 </pre>
 
@@ -31,16 +31,16 @@ sudo docker build -t ##NAME_OF_YOUR_DOCKER_IMAGE##
 </pre>
 
 <b>Step 4 :</b> Create an Apache Installed Container from the image
-Command Syntax: 
+<b>Command Syntax: </b>
 sudo docker run -name [container name] -p [port to access (New Port):port exposed(original port)] -i -t [image name]
 <pre>
-Command:
+<b>Command:</b>
 sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 ##NAME_OF_YOUR_DOCKER_IMAGE##
 </pre>
 
 <b>Step 5 :</b> Now you can access your apache container from your web browser.
 <pre>
-Command:
+<b>Command:</b>
 http://127.0.0.1:8082/
 </pre>
 
@@ -55,11 +55,11 @@ http://127.0.0.1:8082/
 <h4>Additional Notes:</h4>
 <b>Command for attaching the volume of your hosted machine:</b>
 <pre>
-Command Syntax:
+<b>Command Syntax:</b>
 sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 -v ##HOSTED_VOLUME_LOCATION##:##CONTAINER_VOLUME_LOCATION## ##YOUR_IMAGE_NAME##
 </pre>
 
 <pre>
-Command Example:
+<b>Command Example:</b>
 sudo docker run --name apache_ins -d -p 8082:80 -v /var/www/kaushal:/var/www apache_kaushal
 </pre>

@@ -21,13 +21,14 @@ cd Docker-Apache2
 <b>Step 3 :</b> Create the Docker Image
 <pre>
 <b>Command: </b>
-sudo docker build -t ##NAME_OF_YOUR_DOCKER_IMAGE##
+sudo docker build -t ##NAME_OF_YOUR_DOCKER_IMAGE## .
 </pre>
 
 <pre>
 <b>Note : </b>
   a). This command will be fired where the DockerFile will be placed
   b). ##NAME_OF_YOUR_DOCKER_IMAGE## : Replace it with your image name
+  c). . : (.) Symbols shows that your Dockerfile is available on the same directory where you are running the command.
 </pre>
 
 <b>Step 4 :</b> Create an Apache Installed Container from the image

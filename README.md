@@ -51,7 +51,9 @@ http://127.0.0.1:8082/
 <li><b>docker ps :</b> To list all the runing containers</li>
 <li><b>docker kill ##CONTAINER_NAME## :</b> To kill the runing container</li>
 <li><b>docker rm ##CONTAINER_NAME## :</b> To delete the container from the system.</li>
-<li><b>docker inspect ##CONTAINER_NAME## :</b> To get all the information about the docker container</li>
+<li><b>docker inspect ##CONTAINER_NAME## :</b> To get all the information about the container.</li>
+<li><b>docker logs ##CONTAINER_NAME## :</b> To get the logs of the container.</li>
+<li><b>docker ps -a:</b> To get the listing of all the containers.</li>
 </ul>
 
 <h4>Additional Notes:</h4>
